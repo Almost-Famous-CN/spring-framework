@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.almost-famous-cn</groupId>
+    <artifactId>framework</artifactId>
+    <version>1.0.0.RELEASE</version>
+
+    <description>Spring Framework是Java编程史上里程碑式的框架，做这个项目的意义不仅仅在于spring的IOC与AOP，而是更全面的了解和学习并使用它。</description>
+    <contributors>
+        <contributor>
+            <name>Noseparte</name>
+            <email>noseparte@aliyun.com</email>
+        </contributor>
+    </contributors>
+
+</project>
