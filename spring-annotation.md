@@ -4,10 +4,10 @@
 
 本文中的注解包括俩部分：
 
-1. org.springframework.content.annotation.*
+1. _org.springframework.content.annotation.*_
 
-- @Bean
-- @Import
+* [@Bean](#bean)
+- [@Import](#import)
 - @ComponentScan
 - @Configuration
 - @Conditional
@@ -25,7 +25,7 @@
 - @Role
 - @Scope
 
-2. org.springframework.stereotype.*
+2. _org.springframework.stereotype.*_
 
 - @Controller
 - @Service
@@ -34,3 +34,9 @@
 - @Indexed
 
 ## @Bean
+
+@Bean注解代表返回一个实体类
+
+## @Import
+
+@Import
