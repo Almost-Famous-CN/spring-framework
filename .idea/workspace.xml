@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd8a4f81-28cc-4cc5-b0be-12348eec2aba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/easy/learn/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/easy/learn/config/RedisCacheConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/easy/learn/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/easy/learn/interceptor/AccessCheckInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/easy/learn/interceptor/SignatureCheckInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/easy/learn/services/RedisServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/easy/learn/utils/RedisUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/redis.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContent-redis.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/haoyitao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/framework.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="bd8a4f81-28cc-4cc5-b0be-12348eec2aba" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,16 +84,16 @@
     <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\open-source\github\spring-framework\src\main\webapp\WEB-INF" />
-      <recent name="D:\open-source\github\spring-framework\src\main" />
-      <recent name="D:\open-source\github\spring-framework\src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\open-source\github\spring-framework\src\main" />
       <recent name="D:\open-source\github\spring-framework\src\main\resources" />
       <recent name="D:\open-source\github\spring-framework\src\main\java" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\open-source\github\spring-framework\src\main\webapp\WEB-INF" />
+      <recent name="D:\open-source\github\spring-framework\src\main" />
+      <recent name="D:\open-source\github\spring-framework\src" />
     </key>
   </component>
   <component name="RunManager">
@@ -193,10 +171,10 @@
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="690" y="331" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1170@0.0.1920.1170" timestamp="1607431861988" />
-    <state x="559" y="177" key="CommitChangelistDialog2" timestamp="1607433252437">
+    <state x="559" y="177" key="CommitChangelistDialog2" timestamp="1607433728714">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state x="559" y="177" key="CommitChangelistDialog2/0.0.1920.1170@0.0.1920.1170" timestamp="1607433252437" />
+    <state x="559" y="177" key="CommitChangelistDialog2/0.0.1920.1170@0.0.1920.1170" timestamp="1607433728714" />
     <state x="740" y="339" key="FileChooserDialogImpl" timestamp="1607430464976">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
@@ -225,6 +203,10 @@
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="681" y="326" width="540" height="524" key="StructurePopup/0.0.1920.1170@0.0.1920.1170" timestamp="1607432275491" />
+    <state x="552" y="317" key="Vcs.Push.Dialog.v2" timestamp="1607433649060">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="552" y="317" key="Vcs.Push.Dialog.v2/0.0.1920.1170@0.0.1920.1170" timestamp="1607433649060" />
     <state x="588" y="267" key="spring file set editor" timestamp="1607431886955">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
