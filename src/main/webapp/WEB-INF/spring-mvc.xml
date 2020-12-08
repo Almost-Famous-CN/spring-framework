@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+         http://www.springframework.org/schema/context
+         http://www.springframework.org/schema/context/spring-context-4.2.xsd
+         http://www.springframework.org/schema/mvc
+         http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+         http://www.springframework.org/schema/aop
+         https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--spring.xml文件：一般它主要配置Controller的组件扫描器和视图解析器  -->
+    <!-- 使用注解开发，不用配置controller，需要配置一个组件扫描器 -->
+    <context:component-scan base-package="com.easy.learn.controller"/>
+
+    <!--*************** 支持aop **************** -->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+
+    <mvc:resources location="/img/" mapping="/img/**"/>
+    <!-- /js/文件夹下的文件不需要拦截 -->
+    <mvc:resources location="/js/" mapping="/js/**"/>
+    <!-- /css/文件夹下的文件不需要拦截 -->
+    <mvc:resources location="/css/" mapping="/css/**"/>
+
+    <!-- 支持用注解的方式验证参数格式正确性 -->
+    <mvc:annotation-driven validator="validator" conversion-service="conversion-service"/>
+    <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
+        <!-- <property name="providerClass"  value="org.hibernate.validator.HibernateValidator"/> -->
+        <!--不设置则默认为classpath下的 ValidationMessages.properties
+        <property name="validationMessageSource" ref="validatemessageSource"/> -->
+    </bean>
+    <bean id="conversion-service" class="org.springframework.format.support.FormattingConversionServiceFactoryBean"/>
+
+    <!-- 拦截器 -->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/api/*"/>
+            <bean class="com.easy.learn.interceptor.SignatureCheckInterceptor"/>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/web/*"/>
+            <bean class="com.easy.learn.interceptor.AccessCheckInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+    <mvc:annotation-driven>
+    </mvc:annotation-driven>
+
+    <!-- 视图解析器 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!-- 配置从项目根目录到指定目录一端路径 ,建议指定浅一点的目录-->
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <!-- 文件的后缀名 -->
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!-- 文件上传配置 -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- 设置上传文件的最大尺寸为1MB -->
+        <property name="maxUploadSize" value="1048576"/>
+        <property name="defaultEncoding" value="UTF-8"/>
+    </bean>
+</beans>
